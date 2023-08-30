@@ -172,7 +172,7 @@ def main(args):
     if args.enable_gpu:
         dp_classifier.fc_nn.cuda()
 
-    print('Running Loss-Balanced Task Weighting.')
+    print('Running improved Loss-Balanced Task Weighting.')
     kwargs = {'score_path': args.score_path, 'task_list': task_list,
               'alpha': conf['alpha'], 'enable_gpu': args.enable_gpu}
     train_and_test_LBTW(dp_classifier, max_epoch=conf['fitting']['nb_epoch'],

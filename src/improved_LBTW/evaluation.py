@@ -7,14 +7,6 @@ from function import reshape_data_into_2_dim
 def roc_auc_multi(y_true, y_pred, sample_weight, eval_indices, eval_mean_or_median):
     """
     This if for multi-task evaluation
-    y_true and y_pred is two-dimension matrix
-    can evaluate on mean or median of array
-    :param y_true:
-    :param y_pred:
-    :param sample_weight:
-    :param eval_indices:
-    :param eval_mean_or_median:
-    :return:
     """
     y_true = y_true[:, eval_indices]
     y_pred = y_pred[:, eval_indices]
@@ -50,14 +42,6 @@ def acc_single(actual, predicted, sample_weight=None):
 def precision_auc_multi(y_true, y_pred, sample_weight, eval_indices, eval_mean_or_median):
     """
     This if for multi-task evaluation
-    y_true and y_pred is two-dimension matrix
-    can evaluate on mean or median of array
-    :param y_true:
-    :param y_pred:
-    :param sample_weight:
-    :param eval_indices:
-    :param eval_mean_or_median:
-    :return:
     """
     y_true = y_true[:, eval_indices]
     y_pred = y_pred[:, eval_indices]
@@ -95,14 +79,6 @@ def acc_single(actual, predicted, sample_weight=None):
 def acc_multi(y_true, y_pred, sample_weight, eval_indices, eval_mean_or_median):
     """
     This if for multi-task evaluation
-    y_true and y_pred is two-dimension matrix
-    can evaluate on mean or median of array
-    :param y_true:
-    :param y_pred:
-    :param sample_weight:
-    :param eval_indices:
-    :param eval_mean_or_median:
-    :return:
     """
     y_true = y_true[:, eval_indices]
     y_pred = y_pred[:, eval_indices]
@@ -115,12 +91,7 @@ def acc_multi(y_true, y_pred, sample_weight, eval_indices, eval_mean_or_median):
 
 def enrichment_factor_single(labels_arr, scores_arr, percentile, sample_weight):
     '''
-    calculate the enrichment factor based on some upper fraction
-    of library ordered by docking scores. upper fraction is determined
-    by percentile (actually a fraction of value 0.0-1.0)
-
-    -1 represents missing value
-    and remove them when in evaluation
+    calculate the enrichment factor
     '''
     if sample_weight is not None:
         non_missing_indices = np.argwhere(sample_weight == 1)[:, 0]

@@ -1,13 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-"""
-We run Lassonet over [the Mice Dataset](https://archive.ics.uci.edu/ml/datasets/Mice%20Protein%20Expression).
-This dataset consists of protein expression levels measured in the cortex of normal and
-trisomic mice who had been exposed to different experimental conditions.
-Each feature is the expression level of one protein.
-"""
-
 from sklearn.model_selection import train_test_split
 from lassonet import LassoNetClassifier, plot_path
 from lassonet.interfaces import LassoNetClassifierCV

@@ -23,10 +23,6 @@ def read_merged_data(input_file_list):
     print('Data shape\t{}'.format(whole_pd.shape))
     return whole_pd
 
-
-'''
-Get the fingerprints, with feature_name specified, and label_name specified
-'''
 def extract_feature_and_label(data_pd,
                               feature_name,
                               task_list):
