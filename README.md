@@ -33,6 +33,12 @@ The folder './src/improved_LBTW' contains files related to the prediction of ACS
 
 The data was collected from a cross-sectional study conducted at a tertiary hospital in China in the cardiology department between October 2019 and June 2022. Due to privacy concerns, we are unable to disclose the raw data. We have included sample data in the "toyData" folder for demonstration purposes.
 
+
+## Web server
+
+We have also developed a web server for this research (http://www.hello-ai.cloud), which includes functions of (1) Data download, (2) Feature Spectra for Comparison of "Label 1" VS "Label 0" (such as fatty acids spectra), (3) Greedy splitting for multi- task data, (4) Biomarker identification based on LassoNet, (5) Predicting based on multi-task model. This web server provides a user-friendly interface that enables users to easily download our data, upload their data and input parameters, and perform multi-task analysis.
+
+
 ## Reference
 
 [1] I. Lemhadri, F. Ruan, L. Abraham, R. Tibshirani, Lassonet: A neural network with feature sparsity, The Journal of Machine Learning Re- search 22 (1) (2021) 5633–5661.
