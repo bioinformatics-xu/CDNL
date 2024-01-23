@@ -14,6 +14,12 @@ CNDL is designed to enhance the accuracy and prediction capability for ACS comor
 
 CDNL is free for non-commerical use only.
 
+## Cite
+
+If you find this repository useful, please cite paper:
+
+Xiaolu Xu, Zitong Qi, Xiumei Han, Yuxing Wang, Ming Yu, Zhaohong Geng. Combined-task deep network based on LassoNet feature selection for predicting the comorbidities of acute coronary syndrome. Computers in Biology and Medicine (2024), 170: 107992, https://doi.org/10.1016/j.compbiomed.2024.107992.
+
 ## Requirements
 
 Python 3
